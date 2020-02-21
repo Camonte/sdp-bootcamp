@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -14,5 +15,49 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mainName"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="138dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="some text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/mainGoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/mainGoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="105dp"
+        android:background="#E91E63"
+        android:fontFamily="casual"
+        android:text="oui"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#00BCD4"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
